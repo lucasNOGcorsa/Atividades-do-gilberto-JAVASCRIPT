@@ -1,0 +1,240 @@
+MÉDIA PONDERADA 
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atividade.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e média ponderada</title>
+    
+</head>
+<body>
+    <p>insira a nota 1 e o peso 1</p>
+<input type="number"  id="nota1">
+<input type="number" id="peso1">
+<p>insira a nota 2</p>
+<input type="number"  id="nota2">
+<input type="number" id="peso2">
+<p>insira a nota 3</p>
+<input type="number"  id="nota3">
+<input type="number" id="peso3">
+
+<button onclick="calcularMedia()">Calcular média ponderada</button>
+<p id="resultado"></p>
+</body>
+</html>
+
+
+JAVA SCRIPT
+
+
+function calcularMedia(){
+    const n1 = Number(document.getElementById('nota1').value);
+    const p1 = Number(document.getElementById('peso1').value);
+    const n2 = Number(document.getElementById('nota2').value);
+    const p2 = Number(document.getElementById('peso2').value);
+    const n3 = Number(document.getElementById('nota3').value);
+    const p3 = Number(document.getElementById('peso3').value);
+    
+    const media = (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
+
+    document.getElementById('resultado').innerText = 'Média Ponderada:' + media;
+}
+
+|||||||||||||
+||||||||||||||
+
+CALCULO DE IMC
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atividade.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e média ponderada</title>
+    
+</head>
+<body>
+    <p>insira a sua altura e peso </p>
+<input type="number"  id="altura" step="0.01">
+<input type="number" id="peso" step="0.01">
+
+<button onclick="calcularIMC()">Calcular IMC</button>
+<p id="resultado"></p>
+</body>
+</html>
+
+JAVASCRIPT
+
+function calcularIMC(){
+    const n1 = Number(document.getElementById('altura').value);
+    const p1 = Number(document.getElementById('peso').value);
+
+    
+    const IMC = p1 / (n1 * n1);
+
+    document.getElementById('resultado').innerText = 'IMC:' + IMC;
+}
+
+
+
+|||||||||||||||||
+|||||||||||||||
+
+CALCULADORA REAL E EURO
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atividade.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e média ponderada</title>
+    
+</head>
+<body>
+    <p>insira o valor em reais.</p>
+<input type="number"  id="real" step="0.01">
+
+<button onclick="calcularVALOR()">Calcular dólar e euro</button>
+<p id="resultado"></p>
+</body>
+</html>
+
+JAVA SCRIPT
+
+function calcularVALOR(){
+    const n1 = Number(document.getElementById('real').value);
+
+   const x = 5.46;
+   const y = 6.07;
+
+    const dolar = n1 / x;
+    const euro = n1 / y;
+
+    document.getElementById('resultado').innerText = 'Dólar :' + dolar.toFixed(2) + 'Euro' + euro.toFixed(2) ;
+}
+
+||||||||||||||||||||||
+|||||||||||||||||||||
+
+CALCULADORA 
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atividade.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e média ponderada</title>
+    
+</head>
+<body>
+    <p>insira 2 números</p>
+<input type="number"  id="n1" >
+<input type="number" id="n2">
+
+<br>
+
+<button onclick="calcularSOMA()">Calcular soma</button>
+<br>
+<button onclick="calcularSUB()"> calcular subrtração</button>
+<br>
+<button onclick="calcularMULT()">calcular multiplicação</button>
+<br>
+<button onclick="calcularDIV()">calcular divisão</button>
+<p id="resultado"></p>
+</body>
+</html>
+
+JAVA SCRIPT
+
+function calcularSOMA(){
+    const n1 = Number(document.getElementById('n1').value);
+    const n2 = Number(document.getElementById('n2').value);
+
+    const soma = n1 + n2;
+
+    document.getElementById('resultado').innerText = 'A soma é' + soma ;
+}
+
+function calcularSUB(){
+    const n1= Number(document.getElementById('n1').value);
+    const n2= Number(document.getElementById('n2').value);
+
+    const sub = n1 - n2;
+
+    document.getElementById('resultado').innerText = 'A subtração é' + sub;
+}
+
+function calcularMULT(){
+    const n1= Number(document.getElementById('n1').value);
+    const n2= Number(document.getElementById('n2').value);
+
+    const mult= n1 * n2;
+
+    document.getElementById('resultado').innerText= 'A multiplicação é' + mult;
+
+}
+
+function calcularDIV(){
+    const n1= Number(document.getElementById('n1').value);
+    const n2= Number(document.getElementById('n2').value);
+
+    const div= n1/n2;
+
+    document.getElementById('resultado').innerText='A divisão é' + div;
+}
+
+||||||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||
+
+PROGRAMA QUE LÊ VALORES
+
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <script src="atividade.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e média ponderada</title>
+    
+</head>
+<body>
+    <p>insira 3 valores, o código irá ler o maior valor</p>
+<input type="number"  id="n1" >
+<input type="number" id="n2">
+<input type="number" id="n3">
+
+<br>
+
+<button onclick="ler()">ler o maior valor</button>
+<p id="resultado"></p>
+</body>
+</html>
+
+
+JAVA SCRIPT
+
+
+function ler(){
+    const n1 = Number(document.getElementById('n1').value);
+    const n2 = Number(document.getElementById('n2').value);
+    const n3 = Number(document.getElementById('n3').value);
+
+    if(n1 > n2 && n3){
+        document.getElementById('resultado').innerText = `o maior valor é${n1}`;
+    }
+
+    if (n2 > n1 && n3 ){
+        document.getElementById('resultado').innerText = `o maior valor é${n2}` ;
+    }
+    
+    if (n3 > n1 && n2){
+        document.getElementById('resultado').innerText = `o maior valor é${n3}` ;
+    }
+}
+
